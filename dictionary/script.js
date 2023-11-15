@@ -20,7 +20,7 @@ btn.addEventListener("click", ()=>{
         <p>${data[0].phonetics[0].text}</p>
     </div>
     <p class="word-meaning">
-        ${data[0].meanings[0].definitions[0].definition}
+        ${data[0].meanings[1].definitions[0].definition}
     </p>
     <div class="word-example">
        ${data[0].meanings[1].definitions[0].example} 
