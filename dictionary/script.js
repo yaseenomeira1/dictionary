@@ -9,7 +9,6 @@ btn.addEventListener("click", ()=>{
     .then((response) => response.json())
     .then((data) => {
         result.innerHTML = 
-        console.log(data[0]);
         `<div class="word">
         <h3>${inpWord}</h3>
         <button onclick="playSound()">
