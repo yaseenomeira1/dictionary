@@ -26,7 +26,8 @@ btn.addEventListener("click", ()=>{
        ${data[0].meanings[0].definitions[0].example} 
     </div>`;
     sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
-    }); 
+    });
+    console.log(data[0]);
 });
 function playSound(){
     sound.play();
