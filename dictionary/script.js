@@ -9,6 +9,7 @@ btn.addEventListener("click", ()=>{
     .then((response) => response.json())
     .then((data) => {
         result.innerHTML = 
+        console.log(data[0]);
         `<div class="word">
         <h3>${inpWord}</h3>
         <button onclick="playSound()">
@@ -25,9 +26,10 @@ btn.addEventListener("click", ()=>{
     <div class="word-example">
        ${data[0].meanings[0].definitions[0].example} 
     </div>`;
+    
     sound.setAttribute("src", `${data[0].phonetics[0].audio}`);
     });
-    console.log(data[0]);
+
 });
 function playSound(){
     sound.play();
